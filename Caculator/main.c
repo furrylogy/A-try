@@ -9,28 +9,23 @@ void print() {
 	return;
  }
 
-void select(int a) {
-	switch (a) {
-	case 0:exit(0);
-	case 1:mypow(); break;//幂运算
-	case 2:sqr(); break;//开方
-	case 3:gcd(); break;//最大公因数
-	case 4:trigonometric1(); break;//三角函数
-	case 5:lcm(); break;//最小公倍数
-	//case 6:decimal1(); break;//进制转换
-	case 7:cutime(); break;
-	default:printf("请不要输入错误的数字,请重新输入\n"); scanf("%d", &a);
-		select(a); break;
-	}
-	print();
-	scanf("%d", &a);
-	select(a);
-}
-
 int main() {
 	int c;
 	print();
-	scanf("%d", &c);
-	select(c);
+	while(1){
+		scanf("%d", &c);
+			switch (c) {
+			case 0:exit(0);
+			case 1:mypow(); break;//幂运算
+			case 2:sqr(); break;//开方
+			case 3:gcd(); break;//最大公因数
+			case 4:trigonometric1(); break;//三角函数
+			case 5:lcm(); break;//最小公倍数
+			//case 6:decimal1(); break;//进制转换
+			case 7:cutime(); break;
+			default:printf("请不要输入错误的数字,请重新输入\n");continue;
+		}
+		print();
+	}
 	return 0;
 }
