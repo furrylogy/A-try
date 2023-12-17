@@ -1,4 +1,4 @@
-#define  _CRT_SECURE_NO_WARNINGS
+ï»¿#define  _CRT_SECURE_NO_WARNINGS
 #include"major function.h"
 char re[100];
 int integerjudge();
@@ -16,13 +16,13 @@ void gcd1(int a,int b,int c,int d) {
 }
 void gcd() {
     double a, b;
-    printf("ÇëÊäÈëÁ½¸öÕûÊıÊı×Ö\n");
+    printf("è¯·è¾“å…¥ä¸¤ä¸ªæ•´æ•°æ•°å­—\n");
     scanf("%lf%lf", &a, &b);
     if (integerjudge(a) || integerjudge(b)) {
-        printf("Êı¾İÎŞ·¨¼ÆËã");
+        printf("æ•°æ®æ— æ³•è®¡ç®—");
             return;
-    }//ÅĞ¶ÏÊı¾İÊÇ·ñºÏÀí
-    int c, d; c = a; d = b;//±£´æÔ­Ê¼Êı¾İ;
+    }//åˆ¤æ–­æ•°æ®æ˜¯å¦åˆç†
+    int c, d; c = a; d = b;//ä¿å­˜åŸå§‹æ•°æ®;
     gcd1(a, b,c,d);
 
 }

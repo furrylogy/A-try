@@ -1,6 +1,6 @@
-#define  _CRT_SECURE_NO_WARNINGS
+ï»¿#define  _CRT_SECURE_NO_WARNINGS
 #include"major function.h"
-#define $ 3.1415926//ÓÃ$´úÌæ¦Ğ
+#define $ 3.1415926//ç”¨$ä»£æ›¿Ï€
 void sin0();
 void cos0();
 void tan0();
@@ -9,29 +9,29 @@ void trigonometric1();
 double chang();
 void trigonometric2() {
 	int a; double b;
-	printf("µ±Ç°µÄµ¥Î»Îª¶È\n");
-	printf("ÇëÑ¡ÔñÒª¼ÆËãµÄÈı½Çº¯Êı\n");
-	printf("0.¸ü»»µ¥Î»Îª»¡¶È   1.sin   2.cos   3.tan   \n");
+	printf("å½“å‰çš„å•ä½ä¸ºåº¦\n");
+	printf("è¯·é€‰æ‹©è¦è®¡ç®—çš„ä¸‰è§’å‡½æ•°\n");
+	printf("0.æ›´æ¢å•ä½ä¸ºå¼§åº¦   1.sin   2.cos   3.tan   \n");
 	scanf("%d", &a);
 	switch (a) {
 	case 0:trigonometric1(); return;
-	case 1:printf("ÇëÊäÈëÊı¾İ\n"); scanf("%lf", &b); b = chang(b); sin0(b); return;
-	case 2:printf("ÇëÊäÈëÊı¾İ\n"); scanf("%lf", &b); b = chang(b); cos0(b); return;
-	case 3:printf("ÇëÊäÈëÊı¾İ\n"); scanf("%lf", &b); b = chang(b); tan0(b); return;
+	case 1:printf("è¯·è¾“å…¥æ•°æ®\n"); scanf("%lf", &b); b = chang(b); sin0(b); return;
+	case 2:printf("è¯·è¾“å…¥æ•°æ®\n"); scanf("%lf", &b); b = chang(b); cos0(b); return;
+	case 3:printf("è¯·è¾“å…¥æ•°æ®\n"); scanf("%lf", &b); b = chang(b); tan0(b); return;
 	}
 }
 void trigonometric1() {
 	int a; double b;
 	printf("*******************************************\n");
-	printf("µ±Ç°µÄµ¥Î»Îª»¡¶È(²»ĞèÒªÊäÈë¦Ğ)(Çë²»ÒªÊäÈë·ÖÊı(¨®©n¨°)Èç0.5Çë²»ÒªÊäÈëÎª1/2)\n");
-	printf("ÇëÑ¡ÔñÒª¼ÆËãµÄÈı½Çº¯Êı\n");
-	printf("0. ¸ü»»µ¥Î»Îª¶È   1.sin   2.cos   3.tan   \n");
+	printf("å½“å‰çš„å•ä½ä¸ºå¼§åº¦(ä¸éœ€è¦è¾“å…¥Ï€)(è¯·ä¸è¦è¾“å…¥åˆ†æ•°(Ã³ï¹Ã²)å¦‚0.5è¯·ä¸è¦è¾“å…¥ä¸º1/2)\n");
+	printf("è¯·é€‰æ‹©è¦è®¡ç®—çš„ä¸‰è§’å‡½æ•°\n");
+	printf("0. æ›´æ¢å•ä½ä¸ºåº¦   1.sin   2.cos   3.tan   \n");
 	scanf("%d", &a);
 	switch (a) {
 	case 0:trigonometric2(); return;
-	case 1:printf("ÇëÊäÈëÊı¾İ\n"); scanf("%lf", &b); sin0(b); return;
-	case 2:printf("ÇëÊäÈëÊı¾İ\n"); scanf("%lf", &b); cos0(b ); return;
-	case 3:printf("ÇëÊäÈëÊı¾İ\n"); scanf("%lf", &b);  tan0(b ); return;
+	case 1:printf("è¯·è¾“å…¥æ•°æ®\n"); scanf("%lf", &b); sin0(b); return;
+	case 2:printf("è¯·è¾“å…¥æ•°æ®\n"); scanf("%lf", &b); cos0(b ); return;
+	case 3:printf("è¯·è¾“å…¥æ•°æ®\n"); scanf("%lf", &b);  tan0(b ); return;
 	}
 }
 
@@ -39,28 +39,28 @@ void trigonometric1() {
 void sin0(double a) {
 	double  b; char re[100];
 	b = sin(a*$);
-	printf("sin(%lf¦Ğ)=%lf\n", a, b);
-	sprintf(re, "sin(%lf¦Ğ)=%lf\n", a, b);
+	printf("sin(%lfÏ€)=%lf\n", a, b);
+	sprintf(re, "sin(%lfÏ€)=%lf\n", a, b);
 	fileadd(re);
 }
 void cos0(double a) {
 	double  b; char re[100];
 	b = cos(a*$);
-	printf("con(%lf¦Ğ)=%lf\n", a, b);
-	sprintf(re, "con(%lf¦Ğ)=%lf\n", a, b);
+	printf("con(%lfÏ€)=%lf\n", a, b);
+	sprintf(re, "con(%lfÏ€)=%lf\n", a, b);
 	fileadd(re);
 }
 void tan0(double a) {
 	double  b; char re[100];
 	if ((int)(2 * a) % 2 != 0) {
-		printf("ÎŞ·¨¼ÆËã\n");
+		printf("æ— æ³•è®¡ç®—\n");
 		return;
 	}
 	else {
 		b = tan(a*$);
 
-		printf("tan(%lf¦Ğ)=%lf\n", a, b);
-		sprintf(re, "tan(%lf¦Ğ)=%lf\n", a, b);
+		printf("tan(%lfÏ€)=%lf\n", a, b);
+		sprintf(re, "tan(%lfÏ€)=%lf\n", a, b);
 		fileadd(re);
 	}
 }

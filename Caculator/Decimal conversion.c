@@ -1,4 +1,4 @@
-//#define  _CRT_SECURE_NO_WARNINGS
+ï»¿//#define  _CRT_SECURE_NO_WARNINGS
 //#include"major function.h"
 //int i = 0; char zi[] = { 'A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','Q','V','W','X','Y','Z' };
 //void turn(int x, int n, int* arr, int* i) {
@@ -14,9 +14,9 @@
 //int arr[100];
 //void decimal1(){
 //	
-//	 long double x; int n;//xÎªÔ­Êı×Ö£¬nÎª½øÖÆÊı
-//	 double v;//Ğ¡Êı²¿·Ö
-//	printf("ÇëÊäÈëÁ½¸öÊı£¬µÚÒ»¸öÎªÔ­Êı×Ö£¬µÚ¶ş¸öÎªÄ¿±ê½øÖÆÊı\n");
+//	 long double x; int n;//xä¸ºåŸæ•°å­—ï¼Œnä¸ºè¿›åˆ¶æ•°
+//	 double v;//å°æ•°éƒ¨åˆ†
+//	printf("è¯·è¾“å…¥ä¸¤ä¸ªæ•°ï¼Œç¬¬ä¸€ä¸ªä¸ºåŸæ•°å­—ï¼Œç¬¬äºŒä¸ªä¸ºç›®æ ‡è¿›åˆ¶æ•°\n");
 //	scanf("%Lf%d", &x, &n);
 //	if (integerjudge(x)) {
 //		turn(Takeinteger(x), n, arr, &i);  int a;

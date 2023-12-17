@@ -1,16 +1,16 @@
-#define  _CRT_SECURE_NO_WARNINGS
+ï»¿#define  _CRT_SECURE_NO_WARNINGS
 #include"major function.h"
 double p; FILE* file; char re[100];
 void mypow() {
     double a, b, p;
     char re[100];
     FILE* file;
-    printf("ÇëÊäÈëµ×ÊıºÍÖ¸Êı: ");
+    printf("è¯·è¾“å…¥åº•æ•°å’ŒæŒ‡æ•°: ");
     scanf("%lf %lf", &a, &b);  
 
     p = pow(a, b);
     if (isnan(p)) {
-        printf("ÊäÈëµÄÊı¾İÎŞ·¨¼ÆËã\n");
+        printf("è¾“å…¥çš„æ•°æ®æ— æ³•è®¡ç®—\n");
         return;
     }
 

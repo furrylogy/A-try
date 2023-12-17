@@ -1,28 +1,28 @@
-#define major function_h
+ï»¿#define major function_h
 #pragma once
 #include<math.h>
 #include<stdio.h>
 #include<stdlib.h>
 #include<string.h>
 int addsub(char*a);
-void mypow();//ÃİÔËËã
-int mypow1();//ÃİÔËËã·µ»Ø
-void gcd();//×î´ó¹«ÒòÊı£¬³õ´¦Àí
-void gcd1();//×î´ó¹«ÒòÊı£¬Âß¼­´¦Àí
-int gcd2();//·µ»Ø×î´ó¹«ÒòÊı
-void sqr();//¿ª·½
-void fileadd(char re[100]);//ÔÚÎÄ¼şÄ©Î²¼ÓÉÏ×Ö·û
-void trigonometric1();//Èı½Çº¯Êı»¡¶È
-void trigonmetric2();//Èı½Çº¯Êı¶È
-void lcm();//×îĞ¡¹«±¶Êı
-int integerjudge();//ÕûÊıÅĞ¶Ï£¬ÎªÕûÊı·µ»Ø1£¬²»ÊÇ·µ»Ø0
-int recover();//»Ö¸´´ø·ûºÅµÄÊı×Ö
-int sizearr1();//Êı×ÖÎ»Êı£¬´ø·ûºÅ
-int sizearr2();//´¿Êı×ÖÎ»Êı
-void decimal1();//½øÖÆ×ª»»
-int Takeinteger();//È¡ÕûÊı²¿·Ö
-double TakeDecimal();//È¡Ğ¡Êı²¿·Ö
-void cutime();//Ê±¼ä²¿·ÖÑ¡Ôñº¯Êı
+void mypow();//å¹‚è¿ç®—
+int mypow1();//å¹‚è¿ç®—è¿”å›
+void gcd();//æœ€å¤§å…¬å› æ•°ï¼Œåˆå¤„ç†
+void gcd1();//æœ€å¤§å…¬å› æ•°ï¼Œé€»è¾‘å¤„ç†
+int gcd2();//è¿”å›æœ€å¤§å…¬å› æ•°
+void sqr();//å¼€æ–¹
+void fileadd(char re[100]);//åœ¨æ–‡ä»¶æœ«å°¾åŠ ä¸Šå­—ç¬¦
+void trigonometric1();//ä¸‰è§’å‡½æ•°å¼§åº¦
+void trigonmetric2();//ä¸‰è§’å‡½æ•°åº¦
+void lcm();//æœ€å°å…¬å€æ•°
+int integerjudge();//æ•´æ•°åˆ¤æ–­ï¼Œä¸ºæ•´æ•°è¿”å›1ï¼Œä¸æ˜¯è¿”å›0
+int recover();//æ¢å¤å¸¦ç¬¦å·çš„æ•°å­—
+int sizearr1();//æ•°å­—ä½æ•°ï¼Œå¸¦ç¬¦å·
+int sizearr2();//çº¯æ•°å­—ä½æ•°
+void decimal1();//è¿›åˆ¶è½¬æ¢
+int Takeinteger();//å–æ•´æ•°éƒ¨åˆ†
+double TakeDecimal();//å–å°æ•°éƒ¨åˆ†
+void cutime();//æ—¶é—´éƒ¨åˆ†é€‰æ‹©å‡½æ•°
 int changetime1();
 int changetime2(); 
 int changetime3();
@@ -38,17 +38,17 @@ void line();
 
 
 typedef struct digit {
-	char a[100];//´æ´¢Êı×Ö
-	int size;//Êı×ÖÎ»Êı£¨²»º¬·ûºÅ£©
+	char a[100];//å­˜å‚¨æ•°å­—
+	int size;//æ•°å­—ä½æ•°ï¼ˆä¸å«ç¬¦å·ï¼‰
 	int b;
-} digit;//¶ÔÓÚ´óÊıµÄ´æ´¢
+} digit;//å¯¹äºå¤§æ•°çš„å­˜å‚¨
 typedef struct data {
 	int year;
 	int month;
 	int day;
-}data;//¼ÇÂ¼ÈÕÆÚ
+}data;//è®°å½•æ—¥æœŸ
 typedef struct time {
 	int hour;
 	int minute;
 	int second;
-}time;//¼ÇÂ¼Ê±¼ä
+}time;//è®°å½•æ—¶é—´

@@ -1,25 +1,25 @@
-#define  _CRT_SECURE_NO_WARNINGS
+ï»¿#define  _CRT_SECURE_NO_WARNINGS
 #include"major function.h"
 int arr1[13] = { 0,31,59,90,120,151,181,212,243,273,304,334,365 };
 int arr2[13] = { 0,31,60,91,121,152,182,213,244,274,305,335,366 };
 int arr3[13] = { 0,31,28,31,30,31,30,31,31,30,31,30,31 };
 int arr4[13] = { 0,31,29,31,30,31,30,31,31,30,31,30,31 };
 void betime();
-void fdata();//ÈÕÆÚÑ¡Ôñº¯Êı
-void ftime();//Ê±¼äÑ¡Ôñº¯Êı
+void fdata();//æ—¥æœŸé€‰æ‹©å‡½æ•°
+void ftime();//æ—¶é—´é€‰æ‹©å‡½æ•°
 void beftime();
 void aftime();
 void betdata();
 void befdata();
-data befdata1();//ÈòÄê
+data befdata1();//é—°å¹´
 data befdata2();
-data befdata3();//³õÊ¼ÎªÈòÄê
+data befdata3();//åˆå§‹ä¸ºé—°å¹´
 data befdata4();
 int t();
-void cutime () {//Ñ¡Ôñº¯Êı
+void cutime () {//é€‰æ‹©å‡½æ•°
 	int a;
-	printf("Çë¾ö¶¨ÄãÒª½øĞĞµÄ²Ù×÷£º\n");
-	printf("1.ÄêÔÂÈÕµÄ¼ÆËã    2.24Ğ¡Ê±ÖÆµÄ¼ÆËã\n");
+	printf("è¯·å†³å®šä½ è¦è¿›è¡Œçš„æ“ä½œï¼š\n");
+	printf("1.å¹´æœˆæ—¥çš„è®¡ç®—    2.24å°æ—¶åˆ¶çš„è®¡ç®—\n");
 	scanf("%d", &a);
 	switch (a) {
 	case 1:fdata(); break;
@@ -28,14 +28,14 @@ void cutime () {//Ñ¡Ôñº¯Êı
 }
 	void fdata() {
 		int a;
-		printf("ÇëÑ¡ÔñÒª¼ÆËãµÄ·½Ê½(ÈÕÆÚÊäÈë¸ñÊ½Àı£º2023 12 15)\n");
-		printf("1.¼ÆËãÁ½¸öÈÕÆÚÖ®¼äµÄÌìÊı   2.¼ÆËã¸ø¶¨ÈÕÆÚºó¸ø¶¨ÌìÊıµÄÈÕÆÚ   3¼ÆËã¸ø¶¨ÈÕÆÚÇ°¸ø¶¨ÌìÊıµÄÈÕÆÚ\n");
+		printf("è¯·é€‰æ‹©è¦è®¡ç®—çš„æ–¹å¼(æ—¥æœŸè¾“å…¥æ ¼å¼ä¾‹ï¼š2023 12 15)\n");
+		printf("1.è®¡ç®—ä¸¤ä¸ªæ—¥æœŸä¹‹é—´çš„å¤©æ•°   2.è®¡ç®—ç»™å®šæ—¥æœŸåç»™å®šå¤©æ•°çš„æ—¥æœŸ   3è®¡ç®—ç»™å®šæ—¥æœŸå‰ç»™å®šå¤©æ•°çš„æ—¥æœŸ\n");
 		scanf("%d", &a);
 		switch (a) {
 		case 1:betdata(); break;
 		case 2:befdata(); break;
 		case 3:aftdata(); break;
-		default:printf("Ñ¡ÏîÓĞÎÊÌâ£¬ÇëÖØĞÂÊäÈë\n"); fdata(); break;
+		default:printf("é€‰é¡¹æœ‰é—®é¢˜ï¼Œè¯·é‡æ–°è¾“å…¥\n"); fdata(); break;
 		}
 	}
 	void aftdata() {
@@ -43,34 +43,34 @@ void cutime () {//Ñ¡Ôñº¯Êı
 	}
 	void ftime() {
 		int a;
-		printf("ÇëÑ¡ÔñÒª¼ÆËãµÄ·½Ê½(Ê±¼äÊäÈë¸ñÊ½Àı12 45 12  Ë³ĞòÎªÊ±·ÖÃë)\n");
-		printf("1.¼ÆËãÁ½¸öÊ±¼äÖ®¼äµÄ²îÖµ   2.¼ÆËã¸ø¶¨Ê±¼äºóµÄ¸ø¶¨·ÖÖÓÊıµÄÊ±¼ä   3.¼ÆËã¸ø¶¨Ê±¼äÇ°µÄ¸ø¶¨·ÖÖÓµÄÊ±¼ä\n");
+		printf("è¯·é€‰æ‹©è¦è®¡ç®—çš„æ–¹å¼(æ—¶é—´è¾“å…¥æ ¼å¼ä¾‹12 45 12  é¡ºåºä¸ºæ—¶åˆ†ç§’)\n");
+		printf("1.è®¡ç®—ä¸¤ä¸ªæ—¶é—´ä¹‹é—´çš„å·®å€¼   2.è®¡ç®—ç»™å®šæ—¶é—´åçš„ç»™å®šåˆ†é’Ÿæ•°çš„æ—¶é—´   3.è®¡ç®—ç»™å®šæ—¶é—´å‰çš„ç»™å®šåˆ†é’Ÿçš„æ—¶é—´\n");
 		scanf("%d", &a);
 		switch (a) {
 		case 1:betime(); break;
 		case 2:beftime(); break;
 		case 3:aftime(); break;
-		default:printf("Ñ¡ÏîÓĞÎÊÌâ£¬ÇëÖØĞÂÊäÈë\n"); ftime();break;
+		default:printf("é€‰é¡¹æœ‰é—®é¢˜ï¼Œè¯·é‡æ–°è¾“å…¥\n"); ftime();break;
 		}
 	}
 	void befdata() {
 		char re[100];
 		data p; int day; data anw = { 0 }; int day1; 
-		printf("ÇëÊäÈëÒ»¸öÈÕÆÚ\n");
+		printf("è¯·è¾“å…¥ä¸€ä¸ªæ—¥æœŸ\n");
 		scanf("%d%d%d", &p.year, &p.month, &p.day); int day2 = p.day;
 		if (!judgeday(p.year, p.month, p.day)) {
-			printf("Êı¾İÓĞÎÊÌâ\n"); befdata(); return;
+			printf("æ•°æ®æœ‰é—®é¢˜\n"); befdata(); return;
 		}
-		printf("ÇëÊäÈëÌìÊı\n");
-		scanf("%d", &day);//dayÎª¾­¹ıÌìÊı
-		day1 = cuday(p);//day1ÎªÊäÈëÈÕÆÚÒÑ¾­¹ıÈ¥µÄÊıÄ¿
+		printf("è¯·è¾“å…¥å¤©æ•°\n");
+		scanf("%d", &day);//dayä¸ºç»è¿‡å¤©æ•°
+		day1 = cuday(p);//day1ä¸ºè¾“å…¥æ—¥æœŸå·²ç»è¿‡å»çš„æ•°ç›®
 		if (moreyear(p.year)) {
 			if (day1 + day < 366) {
 				p.day = day1 + day;
 				anw = befdata1(p);
 			}
 			else {
-				p.day = day1 + day;//¾­¹ıµÄÌìÊıºÍ²éÕÒÈÕÆÚÖ®ºÍ
+				p.day = day1 + day;//ç»è¿‡çš„å¤©æ•°å’ŒæŸ¥æ‰¾æ—¥æœŸä¹‹å’Œ
 				anw = befdata3(p, day1);
 			}
 		}
@@ -85,7 +85,7 @@ void cutime () {//Ñ¡Ôñº¯Êı
 				}
 
 			}
-			sprintf(re,"%dÄê%dÔÂ%dÈÕºó%dÌìÊÇ%dÄê%dÔÂ%dÈÕ\n",p.year,p.month,day2,day, anw.year, anw.month, anw.day); 
+			sprintf(re,"%då¹´%dæœˆ%dæ—¥å%då¤©æ˜¯%då¹´%dæœˆ%dæ—¥\n",p.year,p.month,day2,day, anw.year, anw.month, anw.day); 
 			printf("%s", re);
 			fileadd(re);
 		}
@@ -114,7 +114,7 @@ void cutime () {//Ñ¡Ôñº¯Êı
 		return anw;
 	}
 	data befdata3(data p,int dayago) {
-		data anw = { 0 }; int day1 = 0;/*day1¼ÇÂ¼ÌìÊı£¬ÓÃÓÚÑ­»·ÕÒÄê·İ */int day2 = 0;//day2ÓÃÓÚ¼ÇÂ¼¾­¹ıµÄÍêÕûÄê·İÌìÊı
+		data anw = { 0 }; int day1 = 0;/*day1è®°å½•å¤©æ•°ï¼Œç”¨äºå¾ªç¯æ‰¾å¹´ä»½ */int day2 = 0;//day2ç”¨äºè®°å½•ç»è¿‡çš„å®Œæ•´å¹´ä»½å¤©æ•°
 		int year1 = p.year;
 		do {
 			year1++;
@@ -144,7 +144,7 @@ void cutime () {//Ñ¡Ôñº¯Êı
 		}return anw;
 	}
 	data befdata4(data p, int dayago) {
-		data anw = { 0 }; int day1 = 0;/*day1¼ÇÂ¼ÌìÊı£¬ÓÃÓÚÑ­»·ÕÒÄê·İ */int day2 = 0;//day2ÓÃÓÚ¼ÇÂ¼¾­¹ıµÄÍêÕûÄê·İÌìÊı
+		data anw = { 0 }; int day1 = 0;/*day1è®°å½•å¤©æ•°ï¼Œç”¨äºå¾ªç¯æ‰¾å¹´ä»½ */int day2 = 0;//day2ç”¨äºè®°å½•ç»è¿‡çš„å®Œæ•´å¹´ä»½å¤©æ•°
 		int year1 = p.year;
 		do {
 			year1++;
@@ -176,14 +176,14 @@ void cutime () {//Ñ¡Ôñº¯Êı
 	void betdata() {
 		data p;
 		data b; int day = 0; char re[100];
-		printf("ÇëÊäÈëÁ½¸öÈÕÆÚ\n");
+		printf("è¯·è¾“å…¥ä¸¤ä¸ªæ—¥æœŸ\n");
 		scanf("%d%d%d", &p.year, &p.month, &p.day);
 		if (!judgeday(p.year, p.month, p.day)) {
-			printf("Êı¾İÓĞÎÊÌâ\n"); betdata(); return;
+			printf("æ•°æ®æœ‰é—®é¢˜\n"); betdata(); return;
 		}
 		scanf("%d%d%d", &b.year, &b.month, &b.day);
 		if (!judgeday(p.year, p.month, p.day)) {
-			printf("Êı¾İÓĞÎÊÌâ\n"); betdata(); return;
+			printf("æ•°æ®æœ‰é—®é¢˜\n"); betdata(); return;
 		}
 		
 		if (comparedata(p, b)) {
@@ -201,11 +201,11 @@ void cutime () {//Ñ¡Ôñº¯Êı
 				day = t(b, p);
 			}
 			
-		}sprintf(re, "%dÄê%dÔÂ%dÈÕºÍ%dÄê%dÔÂ%dÈÕÖ®¼äµÄ²îÎª%dÌì\n", p.year, p.month, p.day, b.year, b.month, b.day, day);
+		}sprintf(re, "%då¹´%dæœˆ%dæ—¥å’Œ%då¹´%dæœˆ%dæ—¥ä¹‹é—´çš„å·®ä¸º%då¤©\n", p.year, p.month, p.day, b.year, b.month, b.day, day);
 		printf("%s", re);
 		fileadd(re); return;
 	}
-	int t(data p, data b) {//¼ÆËãÌìÊıµÄ²î¾à
+	int t(data p, data b) {//è®¡ç®—å¤©æ•°çš„å·®è·
 		int day=0;
 		for (int i = p.year - 1; i > b.year; i--) {
 			if (moreyear(i)) {
@@ -225,17 +225,17 @@ void cutime () {//Ñ¡Ôñº¯Êı
 	}
 	void betime() {
 		int sc;
-		printf("ÇëÊäÈëÊı¾İ\n");
-		time p; int r, t, y, u, i; char re[100];//sc,r,t,y,u,i·Ö±ğÎª²îÖµÃëÊı£¬²îÖµ·ÖÃëÊı£¬²îÖµÊ±·ÖÃëÊı
+		printf("è¯·è¾“å…¥æ•°æ®\n");
+		time p; int r, t, y, u, i; char re[100];//sc,r,t,y,u,iåˆ†åˆ«ä¸ºå·®å€¼ç§’æ•°ï¼Œå·®å€¼åˆ†ç§’æ•°ï¼Œå·®å€¼æ—¶åˆ†ç§’æ•°
 		scanf("%d%d%d", &p.hour, &p.minute, &p.second);
 		if (!(hrjudge(p.hour) &&msjudge(p.minute) && msjudge(p.second))) {
-			printf("Êı¾İ²»·ûºÏÏÖÊµ£¬ÇëÖØĞÂÊäÈë\n");
+			printf("æ•°æ®ä¸ç¬¦åˆç°å®ï¼Œè¯·é‡æ–°è¾“å…¥\n");
 			betime();
 		}
 		time b;
 		scanf("%d%d%d", &b.hour, &b.minute, &b.second);
 		if (!(hrjudge(b.hour) && msjudge(b.minute) && msjudge(b.second))) {
-			printf("Êı¾İ²»·ûºÏÏÖÊµ,ÇëÖØĞÂÊäÈëÁ½¸öÊ±¼ä\n");
+			printf("æ•°æ®ä¸ç¬¦åˆç°å®,è¯·é‡æ–°è¾“å…¥ä¸¤ä¸ªæ—¶é—´\n");
 			betime();
 		}
 		sc = 3600 * p.hour + 60 * p.hour + p.second - 3600 * b.hour - 60 * b.minute - b.second;
@@ -243,18 +243,18 @@ void cutime () {//Ñ¡Ôñº¯Êı
 			sc = -sc;
 		}
 		r = changetime1(sc); t = changetime2(sc); y = changetime3(sc); u = changetime4(sc); i = changetime5(sc);
-		printf("²îÖµÎª%dÃë£¬¼´Îª%d·Ö%dÃë£¬»ò%dĞ¡Ê±%d·Ö%dÃë\n", sc, r, t, y, u, i); 
-		sprintf(re, "%dÊ±%d·Ö%dÃëÓë%dÊ±%d·Ö%dÃëµÄ²îÎª%dÃë£¬¼´Îª%d·Ö%dÃë£¬»ò%dĞ¡Ê±%d·Ö%dÃë\n", p.hour, p.minute, p.second, b.hour, b.minute, b.second, sc, r, t, y, u, i);
+		printf("å·®å€¼ä¸º%dç§’ï¼Œå³ä¸º%dåˆ†%dç§’ï¼Œæˆ–%då°æ—¶%dåˆ†%dç§’\n", sc, r, t, y, u, i); 
+		sprintf(re, "%dæ—¶%dåˆ†%dç§’ä¸%dæ—¶%dåˆ†%dç§’çš„å·®ä¸º%dç§’ï¼Œå³ä¸º%dåˆ†%dç§’ï¼Œæˆ–%då°æ—¶%dåˆ†%dç§’\n", p.hour, p.minute, p.second, b.hour, b.minute, b.second, sc, r, t, y, u, i);
 		printf("%s", re);
 		fileadd(re);
 		return;
 	}
 	void beftime() {
 		char re[100];
-		time p; int min,min2,min1,ho1,day; printf("ÇëÏÈÊäÈëÊ±¼ä£¬ÔÙÊäÈë·ÖÖÓÊı\n");
+		time p; int min,min2,min1,ho1,day; printf("è¯·å…ˆè¾“å…¥æ—¶é—´ï¼Œå†è¾“å…¥åˆ†é’Ÿæ•°\n");
 		scanf("%d%d%d", &p.hour, &p.minute, &p.second);
 		if (!(hrjudge(p.hour) && msjudge(p.minute) && msjudge(p.second))) {
-			printf("Êı¾İ²»·ûºÏÏÖÊµ£¬ÇëÖØĞÂÊäÈë\n");
+			printf("æ•°æ®ä¸ç¬¦åˆç°å®ï¼Œè¯·é‡æ–°è¾“å…¥\n");
 			beftime(); return;
 		}
 		scanf("%d", &min);
@@ -265,41 +265,41 @@ void cutime () {//Ñ¡Ôñº¯Êı
 		if (ho1 > 24) {
 			ho1 = ho1 - 24;
 		}if (day > 0) {
-			printf("%dÊ±%d·Ö%dÃëºó%d·ÖÊÇ%dÊ±%d·Ö%dÃë,ÆäÖĞ£¬ÒÑ¾­¾­¹ı%dÌì\n", p.hour, p.minute, p.second, min, ho1, min1, p.second, day); 
-			sprintf(re, "%dÊ±%d·Ö%dÃëºó%d·ÖÊÇ%dÊ±%d·Ö%dÃë,ÆäÖĞ£¬ÒÑ¾­¾­¹ı%dÌì\n", p.hour, p.minute, p.second, min, ho1, min1, p.second, day); 
+			printf("%dæ—¶%dåˆ†%dç§’å%dåˆ†æ˜¯%dæ—¶%dåˆ†%dç§’,å…¶ä¸­ï¼Œå·²ç»ç»è¿‡%då¤©\n", p.hour, p.minute, p.second, min, ho1, min1, p.second, day); 
+			sprintf(re, "%dæ—¶%dåˆ†%dç§’å%dåˆ†æ˜¯%dæ—¶%dåˆ†%dç§’,å…¶ä¸­ï¼Œå·²ç»ç»è¿‡%då¤©\n", p.hour, p.minute, p.second, min, ho1, min1, p.second, day); 
 			fileadd(re); return;
 		}
 		else {
-			printf("%dÊ±%d·Ö%dÃëºó%d·ÖÊÇ%dÊ±%d·Ö%dÃë\n", p.hour, p.minute, p.second, min, ho1, min1, p.second);
-			sprintf(re, "%dÊ±%d·Ö%dÃëºó%d·ÖÊÇ%dÊ±%d·Ö%dÃë\n", p.hour, p.minute, p.second, min, ho1, min1, p.second);
+			printf("%dæ—¶%dåˆ†%dç§’å%dåˆ†æ˜¯%dæ—¶%dåˆ†%dç§’\n", p.hour, p.minute, p.second, min, ho1, min1, p.second);
+			sprintf(re, "%dæ—¶%dåˆ†%dç§’å%dåˆ†æ˜¯%dæ—¶%dåˆ†%dç§’\n", p.hour, p.minute, p.second, min, ho1, min1, p.second);
 			fileadd(re);
 			return;
 		}
 	}
 	void aftime() {
-		time p; int min,min2,min3,min1,ho1,ho2,day; //minÎªÆğÊ¼Êı¾İ£¬min1Îª´ğ°¸Êı¾İ£¬min2ÎªÌìÊı×ª»»Êı¾İ£¬min3Îª¼ÆËãÊı¾İ£¬dayÎª¾­¹ıµÄÌìÊı£¬holÎª´ğ°¸Ğ¡Ê±£¬ho2Îª¼ÆËãĞ¡Ê±
-		printf("ÇëÏÈÊäÈëÊ±¼ä£¬ÔÙÊäÈë·ÖÖÓÊı\n");
+		time p; int min,min2,min3,min1,ho1,ho2,day; //minä¸ºèµ·å§‹æ•°æ®ï¼Œmin1ä¸ºç­”æ¡ˆæ•°æ®ï¼Œmin2ä¸ºå¤©æ•°è½¬æ¢æ•°æ®ï¼Œmin3ä¸ºè®¡ç®—æ•°æ®ï¼Œdayä¸ºç»è¿‡çš„å¤©æ•°ï¼Œholä¸ºç­”æ¡ˆå°æ—¶ï¼Œho2ä¸ºè®¡ç®—å°æ—¶
+		printf("è¯·å…ˆè¾“å…¥æ—¶é—´ï¼Œå†è¾“å…¥åˆ†é’Ÿæ•°\n");
 		scanf("%d%d%d", &p.hour, &p.minute, &p.second);
 		if (!(hrjudge(p.hour) && msjudge(p.minute) && msjudge(p.second))) {
-			printf("Êı¾İ²»·ûºÏÏÖÊµ£¬ÇëÖØĞÂÊäÈë\n");
+			printf("æ•°æ®ä¸ç¬¦åˆç°å®ï¼Œè¯·é‡æ–°è¾“å…¥\n");
 			beftime(); return;
 		}
 		scanf("%d", &min);
 		day = min / 1440;
-		min2 = min % 1440;//ÅÅ³ı·ÖÖÓÊı¹ı´ó¿çÌì
+		min2 = min % 1440;//æ’é™¤åˆ†é’Ÿæ•°è¿‡å¤§è·¨å¤©
 		if (min2 > (p.hour*60 + p.minute)) {
 			min2 = min - p.hour * 60 - p.minute;
 			min2 = min2 % 60;
 			min1 = 60 - min2;
 			ho2 = min2 / 60;
 			ho1 = 24 - ho2;
-			printf("%dÊ±%d·Ö%dÃëµÄÇ°%d·ÖÖÓÊÇ%dÊ±%d·Ö%dÃë£¬ÒÑ¾­¹ı%dÌì\n", p.hour, p.minute, p.second, min, ho1, min1, p.second,day);
-		}//ÒÑµ½Ç°Ò»Ìì»ò¼¸Ìì
+			printf("%dæ—¶%dåˆ†%dç§’çš„å‰%dåˆ†é’Ÿæ˜¯%dæ—¶%dåˆ†%dç§’ï¼Œå·²ç»è¿‡%då¤©\n", p.hour, p.minute, p.second, min, ho1, min1, p.second,day);
+		}//å·²åˆ°å‰ä¸€å¤©æˆ–å‡ å¤©
 		else {
 			min2 =  p.hour * 60 + p.minute-min2;
 			min1 = min2 % 60;
 			ho1 = min2 / 60;
-			printf("%dÊ±%d·Ö%dÃëµÄÇ°%d·ÖÖÓÊÇ%dÊ±%d·Ö%dÃë£¬ÒÑ¾­¹ı%dÌì\n", p.hour, p.minute, p.second, min, ho1, min1, p.second, day);
+			printf("%dæ—¶%dåˆ†%dç§’çš„å‰%dåˆ†é’Ÿæ˜¯%dæ—¶%dåˆ†%dç§’ï¼Œå·²ç»è¿‡%då¤©\n", p.hour, p.minute, p.second, min, ho1, min1, p.second, day);
 		}
 	}
 	

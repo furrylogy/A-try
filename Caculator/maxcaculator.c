@@ -1,8 +1,8 @@
-#define  _CRT_SECURE_NO_WARNINGS
+ï»¿#define  _CRT_SECURE_NO_WARNINGS
 #include"major function.h"
 //void maxcaculatorpre() {
 //	int a; char* a; int i, t, p;
-//	printf("ÇëÊäÈëÒª¼ÆËãµÄÊı×Ö¸öÊı\n");
+//	printf("è¯·è¾“å…¥è¦è®¡ç®—çš„æ•°å­—ä¸ªæ•°\n");
 //	scanf("%d", &a);
 //	digit* arr;
 //	arr = malloc(a * sizeof(digit));

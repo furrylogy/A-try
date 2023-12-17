@@ -1,4 +1,4 @@
-#define  _CRT_SECURE_NO_WARNINGS
+ï»¿#define  _CRT_SECURE_NO_WARNINGS
 #include"major function.h"
 int integerjudge(double a) {
     if (!(a - (int)a == 0))
@@ -54,35 +54,35 @@ int hrjudge(int a) {
         return 1;
     }
     return 0;
-}//È·±£Ğ¡Ê±ÊıÕıÈ·
+}//ç¡®ä¿å°æ—¶æ•°æ­£ç¡®
 int msjudge(int a) {
     if (a <= 60 && a >= 0) {
         return 1;
     }
     return 0;
-}//È·±£·ÖÖÓÊıºÍÃëÊıÕıÈ·
+}//ç¡®ä¿åˆ†é’Ÿæ•°å’Œç§’æ•°æ­£ç¡®
 int changetime1(int a) {
     a = a / 60;
     return a;
-}//¼ÆËã·ÖÖÓÊı£¬ÊäÈëµÄaÎªÃëÊı
+}//è®¡ç®—åˆ†é’Ÿæ•°ï¼Œè¾“å…¥çš„aä¸ºç§’æ•°
 int changetime2(int a) {
     a = a % 60;
     return a;
-}//¼ÆËãÊ£ÓàµÄÃëÊı£¬ÊäÈëµÄaÎªÃëÊı
+}//è®¡ç®—å‰©ä½™çš„ç§’æ•°ï¼Œè¾“å…¥çš„aä¸ºç§’æ•°
 int changetime3(int a) {
     a = a / 60;
     a = a / 60;
     return a;
-}//¼ÆËãĞ¡Ê±Êı£¬ÊäÈëµÄaÎªÃëÊı
+}//è®¡ç®—å°æ—¶æ•°ï¼Œè¾“å…¥çš„aä¸ºç§’æ•°
 int changetime4(int a) {
     a = a / 60;
     a = a % 60;
     return a;
-}//¼ÆËãÊ£Óà·ÖÖÓÊı£¬ÊäÈëµÄÎªÃëÊı
+}//è®¡ç®—å‰©ä½™åˆ†é’Ÿæ•°ï¼Œè¾“å…¥çš„ä¸ºç§’æ•°
 int changetime5(int a) {
     a = a % 60;
     return a;
-}//¼ÆËãÊ£ÓàÃëÊı,ÊäÈëµÄÎªÃëÊı
+}//è®¡ç®—å‰©ä½™ç§’æ•°,è¾“å…¥çš„ä¸ºç§’æ•°
 int moreyear(int x) {
     if (x % 400 == 0)
     {
@@ -95,7 +95,7 @@ int moreyear(int x) {
         else
             return 0;
     }
-}//ÅĞ¶ÏÊÇ·ñÎªÈòÄê
+}//åˆ¤æ–­æ˜¯å¦ä¸ºé—°å¹´
 int monthjudge(int x) {
     if (x <= 12 && x >= 1) {
         return 1;
@@ -124,7 +124,7 @@ int judgeday(int year,int x, int y) {
     }break;
     default:return 0;
     }
-}//ÅĞ¶ÏÈÕÆÚÊÇ·ñÕıÈ·
+}//åˆ¤æ–­æ—¥æœŸæ˜¯å¦æ­£ç¡®
 int comparedata(data a, data b) {
     if (a.year != b.year) {
         return a.year > b.year ? 1 : 0;
@@ -134,11 +134,11 @@ int comparedata(data a, data b) {
     }
     return a.day > b.day ? 1 : 0;
 }
-//ÅĞ¶ÏaÈÕÆÚÊÇ·ñ´óÓÚbÈÕÆÚ£¬´óÓÚ·µ»Ø1£¬Ğ¡ÓÚµÈÓÚ·µ»Ø0
-int cuday(data a) {//¸ø³öÒÑ¾­¹ıÈ¥¶àÉÙÌì
+//åˆ¤æ–­aæ—¥æœŸæ˜¯å¦å¤§äºbæ—¥æœŸï¼Œå¤§äºè¿”å›1ï¼Œå°äºç­‰äºè¿”å›0
+int cuday(data a) {//ç»™å‡ºå·²ç»è¿‡å»å¤šå°‘å¤©
     int day;
     int arr1[13] = { 0,31,59,90,120,151,181,212,243,273,304,334,365 };
-    int arr2[13] = {0,31,60,91,121,152,182,213,244,274,305,335,366 };//ÈòÄê
+    int arr2[13] = {0,31,60,91,121,152,182,213,244,274,305,335,366 };//é—°å¹´
     day = a.day;
     if (moreyear(a.year)) {
         day = day + arr1[a.month - 1];

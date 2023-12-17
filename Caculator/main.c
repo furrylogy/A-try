@@ -1,11 +1,11 @@
-#define  _CRT_SECURE_NO_WARNINGS
+ï»¿#define  _CRT_SECURE_NO_WARNINGS
 #include"major function.h"
 void print() {
 	printf("***************************************************************************\n");
-	printf("ÇëÑ¡Ôñ²Ù×÷:\n");
-	printf("0.ÍË³ö      1.ÃİÔËËã      2.¿ª·½\n");
-	printf("3.Çó×î´ó¹«ÒòÊı     4.Èı½Çº¯Êı       5.×îĞ¡¹«±¶Êı\n");
-	printf("6.½øÖÆ×ª»»   7.Ê±¼ä¼ÆËã    8.¼ÆËãÁ½ÌõÖ±Ïß½»µã\n");
+	printf("è¯·é€‰æ‹©æ“ä½œ:\n");
+	printf("0.é€€å‡º      1.å¹‚è¿ç®—      2.å¼€æ–¹\n");
+	printf("3.æ±‚æœ€å¤§å…¬å› æ•°     4.ä¸‰è§’å‡½æ•°       5.æœ€å°å…¬å€æ•°\n");
+	printf("6.è¿›åˆ¶è½¬æ¢   7.æ—¶é—´è®¡ç®—    8.è®¡ç®—ä¸¤æ¡ç›´çº¿äº¤ç‚¹\n");
 	return;
  }
 
@@ -16,14 +16,14 @@ int main() {
 		scanf("%d", &c);
 			switch (c) {
 			case 0:exit(0);
-			case 1:mypow(); break;//ÃİÔËËã
-			case 2:sqr(); break;//¿ª·½
-			case 3:gcd(); break;//×î´ó¹«ÒòÊı
-			case 4:trigonometric1(); break;//Èı½Çº¯Êı
-			case 5:lcm(); break;//×îĞ¡¹«±¶Êı
-			//case 6:decimal1(); break;//½øÖÆ×ª»»
+			case 1:mypow(); break;//å¹‚è¿ç®—
+			case 2:sqr(); break;//å¼€æ–¹
+			case 3:gcd(); break;//æœ€å¤§å…¬å› æ•°
+			case 4:trigonometric1(); break;//ä¸‰è§’å‡½æ•°
+			case 5:lcm(); break;//æœ€å°å…¬å€æ•°
+			//case 6:decimal1(); break;//è¿›åˆ¶è½¬æ¢
 			case 7:cutime(); break;
-			default:printf("Çë²»ÒªÊäÈë´íÎóµÄÊı×Ö,ÇëÖØĞÂÊäÈë\n");continue;
+			default:printf("è¯·ä¸è¦è¾“å…¥é”™è¯¯çš„æ•°å­—,è¯·é‡æ–°è¾“å…¥\n");continue;
 		}
 		print();
 	}

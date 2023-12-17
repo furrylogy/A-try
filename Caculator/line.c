@@ -1,10 +1,10 @@
-#define  _CRT_SECURE_NO_WARNINGS
+ï»¿#define  _CRT_SECURE_NO_WARNINGS
 void line() {
 	double a, b, c, d, e, f;
-	printf("Çë°´ÕÕ¸ñÊ½ÊäÈëÁ½ÌõÖ±ÏßÇ°µÄÏµÊı  ax+b=cy\n");
+	printf("è¯·æŒ‰ç…§æ ¼å¼è¾“å…¥ä¸¤æ¡ç›´çº¿å‰çš„ç³»æ•°  ax+b=cy\n");
 	scanf("%lf%lf%lf%lf%lf%lf", &a, &b, &c, &d, &e, & f);
 	if ((a == 0 && d == 00) || (c == 0 && f == 0) || (a / c == d / f)) {
-		printf("Á½ÌõÖ±ÏßÆ½ĞĞ£¨ÖØºÏ£©\n");
+		printf("ä¸¤æ¡ç›´çº¿å¹³è¡Œï¼ˆé‡åˆï¼‰\n");
 		return;
 	}
 

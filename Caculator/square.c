@@ -1,15 +1,15 @@
-#define  _CRT_SECURE_NO_WARNINGS
+ï»¿#define  _CRT_SECURE_NO_WARNINGS
 #include "major function.h"
 void sqr() {
 	double a; double r; char re[100]; 
-	printf("ÇëÊäÈëÒª¿ª·½µÄÊý");
+	printf("è¯·è¾“å…¥è¦å¼€æ–¹çš„æ•°");
 	scanf("%lf", &a);
 	r = sqrt(a);
 	if (isnan(r)) {
-		printf("ÊäÈëµÄÊý¾ÝÎÞ·¨¿ª·½");
+		printf("è¾“å…¥çš„æ•°æ®æ— æ³•å¼€æ–¹");
 			return ;
 	}
 	printf(">>>%lf\n", r);
-	sprintf(re, "%d¿ª·½Îª%lf", a, r);
+	sprintf(re, "%då¼€æ–¹ä¸º%lf", a, r);
 	fileadd(re);
 }
