@@ -15,7 +15,9 @@ data befdata1();//闰年
 data befdata2();
 data befdata3();//初始为闰年
 data befdata4();
+void aftdata();
 int t();
+data aftdata3();
 void cutime () {//选择函数
 	int a;
 	printf("请决定你要进行的操作：\n");
@@ -39,7 +41,53 @@ void cutime () {//选择函数
 		}
 	}
 	void aftdata() {
+		char re[100];
+		data p; int day;  int day1; data anw = { 0 };
+		printf("请输入一个日期\n");
+		scanf("%d%d%d", &p.year, &p.month, &p.day); int day2 = p.day;//day2用于记录原始数据用于打印
+		if (!judgeday(p.year, p.month, p.day)) {
+			printf("数据有问题\n"); befdata(); return;
+		}
+		printf("请输入天数\n");
+		scanf("%d", &day);//day为经过天数
+		day1 = cuday(p); p.day = day1;//现在p中的天数是在这一年已经经过的天数
+		if (day1 > day) {
+			if (moreyear(p.year)) {
+				p.day = p.day - day-1;
+				anw = befdata1(p);
+			}
+			else {
+				p.day = p.day - day;
+				anw = befdata2(p);
+			}
+		}
+		if (day1 < day) {
+			anw=aftdata3(p, day);
+		}
+		printf("%d %d %d", anw.year, anw.month, anw.day);
+	}
 
+	data aftdata3(data p,int dayago) {//dayago代表要减去的总天数
+		int year = p.year; data anw;
+		dayago = dayago - p.day;
+		do { year--;
+		if (moreyear(year)) {
+			dayago=dayago - 366;
+		}
+		else {
+			dayago=dayago - 365;
+		}
+		} while (dayago >= 0);
+		p.year = year;
+		dayago = -dayago;
+		p.day = dayago;
+		if (moreyear(year)) {
+			anw = befdata1(p);
+		}
+		else {
+			anw = befdata2(p);
+		}
+		return anw;
 	}
 	void ftime() {
 		int a;
@@ -100,7 +148,7 @@ void cutime () {//选择函数
 		anw.month = i;
 		anw.day = day - arr2[i-1];
 		return anw;
-	}
+	}//在年份不变的情况下，p.day代表在这一年经过的天数，返回答案日期（闰年下）
 	data befdata2(data p) {
 		data anw; int day = p.day; int day1 = 0; int i = 0;
 		anw.year = p.year;
@@ -108,11 +156,10 @@ void cutime () {//选择函数
 			i++;
 			day1 = arr1[i];
 		} while (day1 < day);
-
 		anw.month = i;
 		anw.day = day - arr1[i - 1];
 		return anw;
-	}
+	}//在年份不变的情况下，p.day代表在这一年经过的天数，返回答案日期（非闰年下）
 	data befdata3(data p,int dayago) {
 		data anw = { 0 }; int day1 = 0;/*day1记录天数，用于循环找年份 */int day2 = 0;//day2用于记录经过的完整年份天数
 		int year1 = p.year;

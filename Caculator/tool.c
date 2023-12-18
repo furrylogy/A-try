@@ -141,9 +141,9 @@ int cuday(data a) {//给出已经过去多少天
     int arr2[13] = {0,31,60,91,121,152,182,213,244,274,305,335,366 };//闰年
     day = a.day;
     if (moreyear(a.year)) {
-        day = day + arr1[a.month - 1];
+        day = day + arr2[a.month - 1];
     }
     else {
-        day = day + arr2[a.month - 1];
+        day = day + arr1[a.month - 1];
     }return day;
 }

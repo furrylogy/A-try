@@ -4,7 +4,7 @@
 #include<stdio.h>
 #include<stdlib.h>
 #include<string.h>
-int addsub(char*a);
+
 void mypow();//幂运算
 int mypow1();//幂运算返回
 void gcd();//最大公因数，初处理
@@ -34,7 +34,8 @@ int moreyear();
 int judgeday();
 int comparedata();
 int cuday();
-void line();
+void line();//解直线
+void equation();//070302  207032
 
 
 typedef struct digit {

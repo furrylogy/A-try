@@ -141,6 +141,7 @@
   <ItemGroup>
     <ClCompile Include="addition and subtraction.c" />
     <ClCompile Include="Decimal conversion.c" />
+    <ClCompile Include="equation.c" />
     <ClCompile Include="file.c" />
     <ClCompile Include="gcd.c" />
     <ClCompile Include="Least Common Multiple.c" />

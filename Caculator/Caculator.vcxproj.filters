@@ -57,6 +57,9 @@
     <ClCompile Include="line.c">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="equation.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="major function.h">

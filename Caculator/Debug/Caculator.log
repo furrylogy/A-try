@@ -1,3 +1,4 @@
 ﻿  time.c
-E:\CODE1\Caculator\time.c(275,24): warning C4101: “min3”: 未引用的局部变量
-  Caculator.vcxproj -> E:\CODE1\Caculator\Debug\Caculator.exe
+E:\CODE1\Atry\Caculator\time.c(44,8): warning C4101: “re”: 未引用的局部变量
+E:\CODE1\Atry\Caculator\time.c(327,24): warning C4101: “min3”: 未引用的局部变量
+  Caculator.vcxproj -> E:\CODE1\Atry\Caculator\Debug\Caculator.exe
