@@ -1,4 +1,6 @@
-﻿  time.c
-E:\CODE1\Atry\Caculator\time.c(44,8): warning C4101: “re”: 未引用的局部变量
-E:\CODE1\Atry\Caculator\time.c(327,24): warning C4101: “min3”: 未引用的局部变量
-  Caculator.vcxproj -> E:\CODE1\Atry\Caculator\Debug\Caculator.exe
+﻿  tool.c
+E:\CODE1\Atry\Caculator\tool.c(35,42): warning C4244: “=”: 从“double”转换到“int”，可能丢失数据
+E:\CODE1\Atry\Caculator\tool.c(41,42): warning C4244: “=”: 从“double”转换到“int”，可能丢失数据
+E:\CODE1\Atry\Caculator\tool.c(171,16): warning C4013: “isFulls”未定义；假设外部返回 int
+E:\CODE1\Atry\Caculator\tool.c(178,16): warning C4013: “isFulln”未定义；假设外部返回 int
+E:\CODE1\Atry\Caculator\tool.c(206,15): error C2180: 控制表达式的类型为“void”

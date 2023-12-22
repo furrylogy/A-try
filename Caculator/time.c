@@ -64,7 +64,9 @@ void cutime () {//选择函数
 		if (day1 < day) {
 			anw=aftdata3(p, day);
 		}
-		printf("%d %d %d", anw.year, anw.month, anw.day);
+		sprintf(re,"%d年%d月%d日前%d天是%d年%d月%d日",p.year,p.month,day2,day,anw.year, anw.month, anw.day);
+		printf("%s", re);
+		fileadd(re);
 	}
 
 	data aftdata3(data p,int dayago) {//dayago代表要减去的总天数

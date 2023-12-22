@@ -4,7 +4,7 @@
 #include<stdio.h>
 #include<stdlib.h>
 #include<string.h>
-
+#include<ctype.h>
 void mypow();//幂运算
 int mypow1();//幂运算返回
 void gcd();//最大公因数，初处理
@@ -35,8 +35,16 @@ int judgeday();
 int comparedata();
 int cuday();
 void line();//解直线
-void equation();//070302  207032
-
+void equation();//解一元二次方程
+void maxcaculatorpre();//计算超大数
+void Fouroperations();//四则运算
+int isEmptyn();// 如果栈顶指针为-1，则栈为空  
+int judgesymbol();//判断是否为操作符
+void pushs();//将操作符推入栈中
+void pushn();//将数字推入栈中
+void next();
+int isFulls();
+int isFulln();
 
 typedef struct digit {
 	char a[100];//存储数字
@@ -53,3 +61,13 @@ typedef struct time {
 	int minute;
 	int second;
 }time;//记录时间
+typedef struct stacks{
+	int top;            // 栈顶指针  
+	int capacity;       // 栈的容量  
+	char *arr;         // 存储栈元素,为数字
+} stacks;
+typedef struct stackn {
+	int top;
+	int capacity;
+	double* arr;
+}stackn;
