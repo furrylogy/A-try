@@ -172,14 +172,16 @@ void pushs(stacks* stack, char item) {
         stack->capacity *= 2;  // 容量翻倍  
         stack->arr = (char*)realloc(stack->arr, stack->capacity * sizeof(char));  // 重新分配内存空间  
     }
-    stack->arr[++(stack->top)] = item;  // 将元素添加到栈顶，并更新栈顶指针  
+    stack->top++;
+    stack->arr[stack->top] = item;// 将元素添加到栈顶，并更新栈顶指针  
 }
 void pushn(stackn* stack, double item) {
     if (isFulln(stack)) {  // 如果栈满了，则进行扩容操作  
         stack->capacity *= 2;  // 容量翻倍  
         stack->arr = (double*)realloc(stack->arr, stack->capacity * sizeof(double));  // 重新分配内存空间  
     }
-    stack->arr[++(stack->top)] = item;  // 将元素添加到栈顶，并更新栈顶指针  
+    stack->top++;
+    stack->arr[stack->top] = item; // 将元素添加到栈顶，并更新栈顶指针  
 }
 int isFulls(stacks* stack) {
     if (stack->top == stack->capacity - 1)
@@ -190,33 +192,73 @@ int isFulln(stackn* stack) {
     if (stack->top == stack->capacity - 1)
         return 1; else return 0; // 如果栈顶指针等于容量减1，则栈满  
 }
-double pop(stackn* s) {
+double popn(stackn* s) {
     if (isemptyn(s)) {
         printf("Error: stack is empty\n");
         return -1;
     }
     return s->arr[(s->top)--];
 }
-
-int needcu(stacks s, char c) {
-    if ( s.arr[s.top]== ('+'||'-')&&c== ('+' || '-'||')'||'*'||'/')) {
+double pops(stacks* s) {
+    if (isemptyn(s)) {
+        printf("Error: stack is empty\n");
+        return -1;
+    }
+    return s->arr[(s->top)--];
+}
+int compare(char a) {
+    if (a == '+'||a=='-')
         return 1;
-    }
-    else {
+    if (a == '*'||a=='/')
+        return 2;
+    if (a == '\0') 
         return 0;
-    }
-    if (s.arr[s.top] == ('*' || '/') && c == ('*' || '/' || ')')) {
-        return 1;
-    }
-    else {
+    if (a == '(')
         return 0;
+    
+}
+//int needcu(stacks s, char c) {
+//    if ( s.arr[s.top]== ('+'||'-')&&c== ('+' || '-'||')'||'*'||'/')) {
+//        return 1;
+//    }
+//    else {
+//        return 0;
+//    }
+//    if (s.arr[s.top] == ('*' || '/') && c == ('*' || '/' || ')')) {
+//        return 1;
+//    }
+//    else {
+//        return 0;
+//    }
+//    if (s.arr[s.top] == '(') {
+//        return 0;
+//    }
+//}
+void next(stackn *n,stacks* s, char c) {
+    if (c == ')') {
+        
+        do {
+            switch (s->arr[s->top]) {
+            case '+':pushn(n, (popn(n) + popn(n))); pops(s);  break;
+            case '-':pushn(n, -(popn(n) - popn(n))); pops(s);  break;
+            case '*':pushn(n, (popn(n) * popn(n))); pops(s); break;
+            case '/':pushn(n, 1/(popn(n) / popn(n))); pops(s);  break;
+            }
+        } while (!s->arr[s->top] == '(');
+        pops(s); return;
     }
-    if (s.arr[s.top] == '(') {
-        return 0;
+    
+if (compare(s->arr[s->top]) >= compare(c)) {
+    switch (s->arr[s->top]) {
+    case '+':pushn(n, (popn(n) + popn(n))); pops(s); pushs(s, c);  break;
+    case '-':pushn(n, -(popn(n) - popn(n))); pops(s); pushs(s, c); break;
+    case '*':pushn(n, (popn(n) * popn(n))); pops(s); pushs(s, c); break;
+    case '/':pushn(n, 1 / (popn(n) / popn(n))); pops(s); pushs(s, c); break;
     }
 }
-void next(stackn *n,stacks* s, char c) {
-    if (needcu(* s, c)) {
-        pushn(&n,())
-    }
+else
+{
+    pushs(s, c);
+}
+    
 }

@@ -45,7 +45,8 @@ void pushn();//将数字推入栈中
 void next();
 int isFulls();
 int isFulln();
-
+double popn();
+double pops();
 typedef struct digit {
 	char a[100];//存储数字
 	int size;//数字位数（不含符号）

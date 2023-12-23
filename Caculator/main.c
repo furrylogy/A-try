@@ -27,6 +27,7 @@ int main() {
 			case 8:line(); break;//求两条直线的交点
 			case 9:equation(); break;//解一元二次方程
 			case 10:
+			case 11:Fouroperations(); break;
 			default:printf("请不要输入错误的数字,请重新输入\n");continue;
 		}
 		print();
