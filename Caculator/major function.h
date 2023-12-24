@@ -47,6 +47,11 @@ int isFulls();
 int isFulln();
 double popn();
 double pops();
+void fileget();
+void logarithm();
+void bigNumberMultiply();
+void filedelete();
+void factorial();
 typedef struct digit {
 	char a[100];//存储数字
 	int size;//数字位数（不含符号）

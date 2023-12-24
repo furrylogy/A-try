@@ -10,6 +10,6 @@ void sqr() {
 			return ;
 	}
 	printf(">>>%lf\n", r);
-	sprintf(re, "%lf开方为%lf", a, r);
+	sprintf(re, "%lf开方为%lf\n", a, r);
 	fileadd(re);
 }

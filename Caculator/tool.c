@@ -217,23 +217,7 @@ int compare(char a) {
         return 0;
     
 }
-//int needcu(stacks s, char c) {
-//    if ( s.arr[s.top]== ('+'||'-')&&c== ('+' || '-'||')'||'*'||'/')) {
-//        return 1;
-//    }
-//    else {
-//        return 0;
-//    }
-//    if (s.arr[s.top] == ('*' || '/') && c == ('*' || '/' || ')')) {
-//        return 1;
-//    }
-//    else {
-//        return 0;
-//    }
-//    if (s.arr[s.top] == '(') {
-//        return 0;
-//    }
-//}
+
 void next(stackn *n,stacks* s, char c) {
     if (c == ')') {
         
@@ -259,6 +243,5 @@ if (compare(s->arr[s->top]) >= compare(c)) {
 else
 {
     pushs(s, c);
-}
-    
+} 
 }

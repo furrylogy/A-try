@@ -9,9 +9,12 @@ void trigonometric1();
 double chang();
 void trigonometric2() {
 	int a; double b;
+	printf("*********************************************\n");
 	printf("当前的单位为度\n");
 	printf("请选择要计算的三角函数\n");
-	printf("0.更换单位为弧度   1.sin   2.cos   3.tan   \n");
+	printf("0.更换单位为弧度 \n");
+	printf("1.sin   2.cos   3.tan\n");
+
 	scanf("%d", &a);
 	switch (a) {
 	case 0:trigonometric1(); return;
@@ -22,10 +25,11 @@ void trigonometric2() {
 }
 void trigonometric1() {
 	int a; double b;
-	printf("*******************************************\n");
-	printf("当前的单位为弧度(不需要输入π)(请不要输入分数(ó﹏ò)如0.5请不要输入为1/2)\n");
-	printf("请选择要计算的三角函数\n");
-	printf("0. 更换单位为度   1.sin   2.cos   3.tan   \n");
+	printf("******************************************************\n");
+	printf("*当前的单位为弧度(不需要输入π)(请不要输入分数(ó﹏ò)如0.5请不要输入为1/2)*\n");
+	printf("*请选择要计算的三角函数*\n");
+	printf("0. 更换单位为度 \n");
+	printf("1.sin   2.cos   3.tan\n");
 	scanf("%d", &a);
 	switch (a) {
 	case 0:trigonometric2(); return;

@@ -18,9 +18,6 @@
     <ClCompile Include="main.c">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="addition and subtraction.c">
-      <Filter>源文件</Filter>
-    </ClCompile>
     <ClCompile Include="mypow.c">
       <Filter>源文件</Filter>
     </ClCompile>
@@ -61,6 +58,12 @@
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="Four operations.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="logarithm.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="factorial.c">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>

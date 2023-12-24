@@ -1,2 +1,2 @@
-﻿  Four operations.c
-  Caculator.vcxproj -> E:\CODE1\Atry\Caculator\Debug\Caculator.exe
+﻿  main.c
+E:\CODE1\Caculator\main.c(34,21): warning C4013: “factorial”未定义；假设外部返回 int

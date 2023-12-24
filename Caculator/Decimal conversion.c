@@ -17,6 +17,10 @@ void decimal1() {
     int x, n; // x为原数字，n为进制数  
     printf("请输入两个数，第一个为原数字，第二个为目标进制数\n");
     scanf("%d%d", &x, &n);
+    if (n < 2 || n>36) {
+        printf("无法转换\n");
+        decimal1(); return;
+    }
     i = 0; // 重置i的值  
     turn(x, n, arr, &i);
     int a;
@@ -31,7 +35,7 @@ void decimal1() {
         }
     }
     
-    sprintf(re,"%d转换为%d进制为%s", x, n, ne);
+    sprintf(re,"%d转换为%d进制为%s\n", x, n, ne);
     printf("%s", re);
     fileadd(re);
 

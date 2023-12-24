@@ -139,15 +139,16 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="addition and subtraction.c" />
     <ClCompile Include="Decimal conversion.c" />
     <ClCompile Include="equation.c" />
+    <ClCompile Include="factorial.c" />
     <ClCompile Include="file.c" />
     <ClCompile Include="Four operations.c" />
     <ClCompile Include="gcd.c" />
     <ClCompile Include="Least Common Multiple.c" />
     <ClCompile Include="line.c" />
     <ClCompile Include="linear equation in two unknowns.c" />
+    <ClCompile Include="logarithm.c" />
     <ClCompile Include="main.c" />
     <ClCompile Include="maxcaculator.c" />
     <ClCompile Include="mypow.c" />
